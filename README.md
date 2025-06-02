@@ -8,7 +8,7 @@ An AI-powered autonomous robot that navigates indoor environments to detect and 
 
 This robot:
 - Navigates autonomously on a 4-wheel mobile platform
-- Detects socks on the floor using a Raspberry Pi camera + YOLOv5
+- Detects socks on the floor using a Raspberry Pi camera and a custom-trained YOLOv5 model
 - Picks up detected socks using an Arduino-controlled robotic arm
 - Avoids obstacles using ultrasonic sensors
 
@@ -28,6 +28,19 @@ This robot:
 
 ---
 
+## Model Training Results
+
+- Trained for 30 epochs using YOLOv5n
+- Achieved peak performance at **epoch 19** with:
+  - `mAP@0.5`: **0.46086**
+  - `Precision`: **0.72437**
+  - `Recall`: **0.5**
+
+Model checkpoint: `runs/train/socks_model_pi2/weights/best.pt`
+
+## Project Structure
+
+```bash
 ## Project Structure
 
 autonomous-sock-pickup-robot/
