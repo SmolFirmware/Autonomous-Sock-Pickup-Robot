@@ -28,13 +28,14 @@ This robot:
 
 ---
 
-## Model Training Results
+## Model Training Results (as of 2025-06-01)
 
 - Trained for 30 epochs using YOLOv5n
 - Achieved peak performance at **epoch 19** with:
-  - `mAP@0.5`: **0.46086**
-  - `Precision`: **0.72437**
-  - `Recall`: **0.5**
+  - `mAP@0.5`: **0.464**
+  - `mAP@0.5:0.95`: **0.224**
+  - `Precision`: **0.712**
+  - `Recall`: **0.500**
 
 Model checkpoint: `runs/train/socks_model_pi2/weights/best.pt`
 
