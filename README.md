@@ -33,21 +33,21 @@ This robot:
 autonomous-sock-pickup-robot/
 ├── yolov5/                     # YOLOv5 repo (cloned for training and inference)
 ├── trained_model/
-│ └── best.pt                   # Trained sock detection model
+│   └── best.pt                 # Trained sock detection model
 ├── scripts/
-│ ├── detect_sock.py            # YOLOv5 detection script with camera and Arduino trigger
-│ ├── sock_scan_loop.py         # Autonomous movement + object detection loop
-│ └── capture_image.py          # Utility script for capturing training images
+│   ├── detect_sock.py          # YOLOv5 detection script with camera and Arduino trigger
+│   ├── sock_scan_loop.py       # Autonomous movement + object detection loop
+│   └── capture_image.py        # Utility script for capturing training images
 ├── arduino/
-│ └── sock_picker.ino           # Arduino code to control servo arm for sock pickup
+│   └── sock_picker.ino         # Arduino code to control servo arm for sock pickup
 ├── socks_dataset/
-│ ├── train/                    # Training images
-│ ├── valid/                    # Validation images
-│ └── data.yaml                 # YOLOv5 dataset config
+│   ├── train/                  # Training images
+│   ├── valid/                  # Validation images
+│   └── data.yaml               # YOLOv5 dataset config
 ├── images/
-│ └── detected_example.jpg      # Sample detection result
+│   └── detected_example.jpg    # Sample detection result
 ├── videos/
-│ └── demo.mp4                  # Project demo video
+│   └── demo.mp4                # Project demo video
 ├── requirements.txt
 └── README.md
 
